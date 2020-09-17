@@ -440,6 +440,7 @@
 							$("#drep").empty().html(msg);
 							swal("감사합니다!");
 						})
+						$("#reptxt").val('');
 					});
 		}else{
 			swal("메시지를 입력해 주세요.");
@@ -490,8 +491,6 @@
 
 		swal("Wait...");
 		$.post("http://devveb.hopto.org:28081/api/lotto/ch", {r:nu}, function (result) {
-
-
 			$("#checkPortlet").empty().html(result);
 		});
 
